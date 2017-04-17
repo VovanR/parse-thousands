@@ -49,22 +49,22 @@ parseThousands();
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
-[demo]: http://vovanr.github.io/parse-thousands
+[demo]: https://vovanr.github.io/parse-thousands
 
-[commitizen-url]: http://commitizen.github.io/cz-cli/
+[commitizen-url]: https://commitizen.github.io/cz-cli/
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
 
 [codestyle-url]: https://github.com/sindresorhus/xo
 [codestyle-image]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg?style=flat-square
 
 [npm-url]: https://npmjs.org/package/parse-thousands
-[npm-image]: http://img.shields.io/npm/v/parse-thousands.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/parse-thousands.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/VovanR/parse-thousands
-[travis-image]: http://img.shields.io/travis/VovanR/parse-thousands.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/VovanR/parse-thousands.svg?style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/VovanR/parse-thousands
-[coveralls-image]: http://img.shields.io/coveralls/VovanR/parse-thousands.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/VovanR/parse-thousands.svg?style=flat-square
 
 [depstat-url]: https://david-dm.org/VovanR/parse-thousands
 [depstat-image]: https://david-dm.org/VovanR/parse-thousands.svg?style=flat-square
