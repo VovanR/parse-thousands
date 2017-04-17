@@ -1,9 +1,19 @@
+/* eslint no-var: off */
+
 var REGEXP = /-?[\d.]+/g;
 
+/**
+ * @param {*} value
+ * @returns {Boolean}
+ */
 function isNumber(value) {
 	return typeof value === 'number' && isFinite(value);
 }
 
+/**
+ * @param {String|Number} value
+ * @returns {Number}
+ */
 function parseThousands(value) {
 	if (isNumber(value)) {
 		return value;
@@ -15,8 +25,4 @@ function parseThousands(value) {
 	}
 }
 
-/**
- * @param {String|Number} value
- * @returns {Number}
- */
 module.exports = parseThousands;

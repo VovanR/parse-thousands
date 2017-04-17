@@ -18,7 +18,7 @@ test('should work with strings', t => {
 	t.is(fn('-3421.6'), -3421.6);
 	t.is(fn('-3,421.6'), -3421.6);
 	t.is(fn("1'234'567'890.6"), 1234567890.6);
-	// t.is(fn('1 234 567,890'), 1234567.89);
+	// TODO t.is(fn('1 234 567,890'), 1234567.89);
 });
 
 test('should return `NaN` if fired without args', t => {
