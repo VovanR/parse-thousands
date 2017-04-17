@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>parse-thousands</title>
+    <meta name="description" content="Parse thousands with custom separator: '1,000,000.1' => 1000000.1">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form
+	class="parser"
+	action=""
+	>
+	<div class="parser__input">
+		<input
+			class="parser__control parser__control_name_number"
+			value="1,000,000.1"
+			type="text"
+			name="number"
+			placeholder="number"
+			/>
+	</div>
+
+	<div class="parser__output">
+		<input
+			class="parser__control parser__control_name_result"
+			value=""
+			readonly
+			type="text"
+			name="result"
+			placeholder="result"
+			/>
+		</label>
+	</div>
+</form>
+
+<a
+	class="copyright"
+	href="https://github.com/vovanr/parse-thousands"
+	target="_blank"
+	rel="noopener noreferrer"
+	tabindex="-1"
+	>
+	<span class="copyright__license">MIT ©</span> <span class="copyright__author">Vladimir Rodkin</span>
+</a>
+
+<script>window.module = {}</script>
+<script src="index.js"></script>
+<script>
+(function (parseThousands) {
+	'use strict'
+
+	var form = document.forms[0]
+	var elements = form.elements
+	var numberControl = elements.number
+	var resultControl = elements.result
+
+	form.addEventListener('input', renderResult)
+	form.addEventListener('change', renderResult)
+	form.addEventListener('submit', function (event) {
+		event.preventDefault();
+	})
+
+	function renderResult() {
+		resultControl.value = parseThousands(numberControl.value)
+	}
+
+	renderResult()
+
+})(window.module.exports)
+</script>
+
+</body>
+</html>
