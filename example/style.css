@@ -6,7 +6,7 @@ body {
 	margin: 0;
 }
 
-.formatter {
+.parser {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -17,19 +17,19 @@ body {
     width: 100%;
 }
 
-.formatter__input {
+.parser__input {
     display: flex;
     flex: 2;
     height: 50%;
 }
 
-.formatter__output {
+.parser__output {
     display: flex;
     flex: 3;
     height: 50%;
 }
 
-.formatter__control {
+.parser__control {
     box-sizing: border-box;
     font-size: 500%;
     text-align: center;
@@ -41,65 +41,35 @@ body {
     min-width: 0;
 }
 
-.formatter__control:focus {
+.parser__control:focus {
     border-color: #ff3304;
 }
 
-.formatter__control_name_number {
+.parser__control_name_number {
     width: 50%;
     flex: 3;
 }
 
-.formatter__control_name_separator {
-	flex: 1;
-	font-size: 250%;
-	width: 100%;
-}
-
-.formatter__control_name_result {
+.parser__control_name_result {
     width: 100%;
     background-color: #fbfbfb;
 }
 
-.formatter__options {
-	display: flex;
-	flex-direction: column;
-    width: 50%;
-    flex: 2;
-	justify-content: center;
-}
-
-.formatter__checkbox {
-	display: flex;
-	flex: 1;
-	align-items: center;
-	justify-content: center;
-	font-size: 120%;
-}
-
-.formatter__checkbox input {
-	margin-left: -3%;
-}
 
 
 @media (max-width: 470px) {
-	.formatter__input {
+	.parser__input {
 		flex-direction: column;
 		height: 50%;
 		flex: 3;
 	}
 
-	.formatter__output {
+	.parser__output {
 		height: 50%;
 		flex: 2;
 	}
 
-	.formatter__control_name_number {
-		width: 100%;
-		flex: 1;
-	}
-
-	.formatter__options {
+	.parser__control_name_number {
 		width: 100%;
 		flex: 1;
 	}
